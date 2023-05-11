@@ -10,13 +10,11 @@ public class BloggingContext : DbContext
 
     public BloggingContext()
     {
-        var folder = Environment.SpecialFolder.LocalApplicationData;
-        var path = Environment.GetFolderPath(folder);
-        DbPath = System.IO.Path.Join(path, "blogging.db");
+        DbPath = Path.Join(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "blogging.db");
+        //copy database on build - replace DbPath with the path to local database
     }
 
-    // The following configures EF to create a Sqlite database file in the
-    // special "local" folder for your platform.
+    // The following configures EF to use a Sqlite database file in the project folder.
     protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options.UseSqlite($"Data Source={DbPath}");
 }

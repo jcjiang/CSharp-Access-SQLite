@@ -11,11 +11,11 @@ Console.WriteLine($"Database path: {db.DbPath}.");
 Console.WriteLine("Querying for blogs");
 
 var results =
-    from blog in db.Blogs
+    from blog in await db.Blogs.ToListAsync()
     where blog.BlogId == 1
     select blog;
 
-await foreach (var s in results.AsAsyncEnumerable())
+foreach (var s in results)
 {
     Console.WriteLine("Blog id: " + s.BlogId + "    Blog URL: " + s.Url);
 }

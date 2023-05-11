@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore", "EFCore\EFCore.csproj", "{6EB87832-5ADF-472B-86FB-FEA1DE7392F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore", "EFCore\EFCore.csproj", "{6EB87832-5ADF-472B-86FB-FEA1DE7392F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperExample", "Dapper\DapperExample.csproj", "{99F17E23-3029-43B7-9ED5-692E4D9DDA50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONET", "ADONET\ADONET.csproj", "{9B4EAA78-E386-44CD-A516-F7D056FB293B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F658C262-AE2D-47A8-B638-935601AB451A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLiteNET", "SQLiteNET\SQLiteNET.csproj", "{AB68DCF4-8741-490F-9592-027F66B51E00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,18 @@ Global
 		{6EB87832-5ADF-472B-86FB-FEA1DE7392F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EB87832-5ADF-472B-86FB-FEA1DE7392F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EB87832-5ADF-472B-86FB-FEA1DE7392F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F17E23-3029-43B7-9ED5-692E4D9DDA50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F17E23-3029-43B7-9ED5-692E4D9DDA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F17E23-3029-43B7-9ED5-692E4D9DDA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F17E23-3029-43B7-9ED5-692E4D9DDA50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B4EAA78-E386-44CD-A516-F7D056FB293B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B4EAA78-E386-44CD-A516-F7D056FB293B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B4EAA78-E386-44CD-A516-F7D056FB293B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B4EAA78-E386-44CD-A516-F7D056FB293B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB68DCF4-8741-490F-9592-027F66B51E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB68DCF4-8741-490F-9592-027F66B51E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB68DCF4-8741-490F-9592-027F66B51E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB68DCF4-8741-490F-9592-027F66B51E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

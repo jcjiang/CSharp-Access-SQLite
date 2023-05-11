@@ -1,8 +1,11 @@
 ﻿using Microsoft.Data.Sqlite;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 Console.WriteLine("Querying for blogs");
+string DbPath = "blogging.db";
+Console.WriteLine($"Database path: {DbPath}"); 
 
-await using var conn = new SqliteConnection(@"Server=(localdb)\mssqllocaldb;Database=Blogging;Trusted_Connection=True;");
+await using var conn = new SqliteConnection($"Data Source={DbPath}");
 
 await conn.OpenAsync();
 
@@ -11,6 +14,6 @@ await using var dataReader = await cmd.ExecuteReaderAsync();
 
 while (await dataReader.ReadAsync())
 {
-    Console.WriteLine(dataReader["BlogId"]);
-    Console.WriteLine(dataReader["Url"]); //not an object!
+    Console.WriteLine(dataReader["BlogId"].ToString());
+    Console.WriteLine(dataReader["Url"].ToString()); //not an object!
 }

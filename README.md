@@ -20,13 +20,12 @@ This sample draws from this tutorial for [Getting Started with EF Core with SQLi
 
 Run the code below in the project folder to create a SQLite database named `blogging.db` and insert a single blog post. Do this before you run the project! The sample code samples depend on having an existing database to connect to and query.
 
+`sqlite3 blogging.db`
+
 ### Run
 
 Each code sample has the same functionality implemented in a different way. When run, the code will generate a console app that connects to a SQL Server (or Azure SQL database with the appropriate connection string) and queries it for all the blog posts stored.
 
-```
-sqlite3 blogging.db
-```
 
 ### Contribution
 
