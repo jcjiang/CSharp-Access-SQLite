@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -51,10 +55,6 @@
             "SQLite": {
               "target": "Package",
               "version": "[3.13.0, )"
-            },
-            "SQLitePCLRaw.core": {
-              "target": "Package",
-              "version": "[2.1.4, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

@@ -10,8 +10,7 @@ public class BloggingContext : DbContext
 
     public BloggingContext()
     {
-        DbPath = Path.Join(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "blogging.db");
-        //copy database on build - replace DbPath with the path to local database
+        DbPath = "blogging.db";
     }
 
     // The following configures EF to use a Sqlite database file in the project folder.
