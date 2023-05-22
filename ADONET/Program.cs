@@ -14,6 +14,6 @@ await using var dataReader = await cmd.ExecuteReaderAsync();
 
 while (await dataReader.ReadAsync())
 {
-    Console.WriteLine(dataReader["BlogId"].ToString());
-    Console.WriteLine(dataReader["Url"].ToString()); //not an object!
+    Console.WriteLine(dataReader["BlogId"]);
+    Console.WriteLine(dataReader["Url"]); //not an object!
 }
