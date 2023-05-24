@@ -9,7 +9,6 @@ This sample draws from this tutorial for [Getting Started with EF Core with SQLi
 ### Prerequisites
 
 - [.NET Core 6.0 or higher](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
-- [SQLite](https://www.sqlite.org/download.html)
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 - A basic understanding of C# and SQL
 
