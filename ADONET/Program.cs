@@ -1,9 +1,8 @@
 ﻿using Microsoft.Data.Sqlite;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 Console.WriteLine("Querying for blogs");
 string DbPath = "blogging.db";
-Console.WriteLine($"Database path: {DbPath}"); 
+Console.WriteLine($"Database path: {DbPath}");
 
 await using var conn = new SqliteConnection($"Data Source={DbPath}");
 
